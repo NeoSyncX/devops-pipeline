@@ -1,18 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Pipeline - Mame Coumba Sall</title>
     <style>
-        body { font-family: Arial; text-align: center; background: #1a1a2e; color: white; padding: 50px; }
-        h1 { color: #e94560; }
-        p { color: #a8dadc; }
-        .badge { background: #e94560; padding: 5px 15px; border-radius: 20px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #0f172a; color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { text-align: center; padding: 40px; max-width: 700px; }
+        .tag { background: rgba(255,255,255,0.1); color: #94c5f8; padding: 6px 18px; border-radius: 20px; font-size: 0.85em; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; margin: 20px 0 10px; color: white; }
+        .subtitle { color: #94c5f8; margin-bottom: 40px; }
+        .cards { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+        .card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 20px 25px; }
+        .card-title { font-weight: bold; font-size: 1.1em; }
+        .card-sub { color: #94c5f8; font-size: 0.8em; margin-top: 4px; }
+        .badge { background: #e94560; color: white; padding: 8px 22px; border-radius: 20px; font-weight: bold; display: inline-block; margin-bottom: 15px; }
+        .footer { color: #475569; font-size: 0.85em; }
+        .success { color: #4ade80; font-size: 0.9em; margin-top: 10px; }
     </style>
 </head>
 <body>
-    <h1>🚀 DevOps Pipeline</h1>
-    <p>Déployé avec Jenkins + Docker</p>
-    <p><span class="badge">Mame Coumba Sall</span></p>
-    <p>Groupe OUMOUKHARYCOUMBA — 2025</p>
+    <div class="container">
+        <span class="tag">Pipeline CI/CD - Jenkins + Docker</span>
+        <h1>DevOps Pipeline</h1>
+        <p class="subtitle">Application deployee automatiquement via Jenkins</p>
+        <div class="cards">
+            <div class="card">
+                <div class="card-title">Jenkins</div>
+                <div class="card-sub">CI/CD Automation</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Docker</div>
+                <div class="card-sub">Containerisation</div>
+            </div>
+            <div class="card">
+                <div class="card-title">GitHub</div>
+                <div class="card-sub">Source Control</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Nginx</div>
+                <div class="card-sub">Web Server</div>
+            </div>
+        </div>
+        <div class="badge">Mame Coumba Sall</div>
+        <p class="footer">Groupe OUMOUKHARYCOUMBA -- Administration Windows Server 2025</p>
+        <p class="success">Build reussi avec succes !</p>
+    </div>
 </body>
 </html>
